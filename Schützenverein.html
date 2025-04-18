@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St.Seb.Schützenbruderschaft Brühl-Vochem 1871 - Herzlich Willkommen</title>
+    <style>
+        /* === CSS Styling === */
+        :root {
+            --primary-color: #006400; /* Dunkelgrün */
+            --secondary-color: #f4f4f4; /* Helles Grau */
+            --text-color: #333;
+            --header-footer-bg: #333;
+            --header-footer-text: #fff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        header {
+            background: var(--header-footer-bg);
+            color: var(--header-footer-text);
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: var(--primary-color) 3px solid;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background: var(--primary-color);
+            color: var(--header-footer-text);
+            padding: 10px 0;
+            text-align: center;
+            position: sticky; /* Macht die Navi "sticky" */
+            top: 0; /* Bleibt am oberen Rand kleben */
+            z-index: 10; /* Stellt sicher, dass sie über anderem Inhalt liegt */
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: var(--header-footer-text);
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        main section {
+            padding: 40px 20px;
+            margin-bottom: 20px;
+            background-color: var(--secondary-color);
+            border-left: 5px solid var(--primary-color);
+            border-radius: 5px;
+        }
+
+        main section:nth-child(even) {
+             background-color: #fff; /* Abwechselnde Hintergrundfarben */
+             border-left-color: #555;
+        }
+
+
+        main h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--primary-color);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .event-list li, .gallery-item {
+            background: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        /* Einfache Galerie-Stile (Platzhalter) */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border: 1px solid #ccc;
+        }
+         .gallery-item p {
+            font-size: 0.9em;
+            text-align: center;
+            margin-top: 5px;
+         }
+
+        footer {
+            background: var(--header-footer-bg);
+            color: var(--header-footer-text);
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        /* Responsive Design Anpassungen */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+             nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+             main section {
+                padding: 20px 15px;
+             }
+             .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+             }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>St.Seb.Schützenbruderschaft Brühl-Vochem 1871</h1>
+            <p>Tradition - Sport - Gemeinschaft</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home" class="active">Startseite</a></li>
+                <li><a href="#about">Über Uns</a></li>
+                <li><a href="#events">Termine & Aktuelles</a></li>
+                <li><a href="#gallery">Bildergalerie</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="home">
+            <h2>Herzlich Willkommen beim St.Seb.Schützenbruderschaft Brühl-Vochem 1871!</h2>
+            <p>Wir freuen uns, Sie auf unserer Webseite begrüßen zu dürfen. Hier finden Sie alle Informationen rund um unseren Verein, 
+            <p>unsere Aktivitäten und wie Sie Teil unserer Gemeinschaft werden können.</p>
+            <p>Ob Sportschütze, Traditionsliebhaber oder einfach nur an Geselligkeit interessiert – bei uns sind Sie richtig!</p>
+        </section>
+
+        <section id="about">
+            <h2>Über Uns</h2>
+            <p>Der Schützenverein wurde im Jahr 1871 gegründet und blickt auf eine lange Geschichte zurück. Wir pflegen das traditionelle Schützenwesen und fördern den Schießsport in verschiedenen Disziplinen.</p>
+            <p>Unser Vereinsheim mit modernen Schießständen bietet optimale Bedingungen für Training und Wettkämpfe. Kameradschaft und gemeinschaftliche Aktivitäten stehen bei uns im Vordergrund.</p>
+            <ul>
+                <li>Luftgewehr & Luftpistole</li>
+                <li>Kleinkalibergewehr</li>
+                <li>Regelmäßige Stammtische und Vereinsfeste</li>
+            </ul>
+        </section>
+
+        <section id="events">
+            <h2>Termine & Aktuelles</h2>
+            <p>Hier finden Sie unsere nächsten Termine und aktuelle Neuigkeiten:</p>
+            <ul class="event-list">
+                <li><strong>[Datum]:</strong> Nächstes Königsschießen - Beginn 19:00 Uhr im Schützenhaus</li>
+                <li><strong>[Datum]:</strong> Vereinsmeisterschaft Luftgewehr - Anmeldung bis [Datum]</li>
+                <li><strong>[Datum]:</strong> Sommerfest des Vereins - Details folgen</li>
+                <li><strong>Neuigkeit:</strong> Unsere Jugendmannschaft hat beim letzten Wettkampf den 2. Platz belegt! Herzlichen Glückwunsch!</li>
+            </ul>
+            <p>Weitere Details und Ergebnisse finden Sie auch in unserem Aushang im Vereinsheim.</p>
+        </section>
+
+         <section id="gallery">
+            <h2>Bildergalerie</h2>
+            <p>Einige Impressionen aus unserem Vereinsleben:</p>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150/006400/FFFFFF?text=Schützenfest" alt="Bild vom Schützenfest">
+                     <p>Schützenfest 2024</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150/CCCCCC/000000?text=Training" alt="Bild vom Training">
+                     <p>Training Jugend</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150/8FBC8F/FFFFFF?text=Vereinsheim" alt="Bild vom Vereinsheim">
+                     <p>Unser Vereinsheim</p>
+                </div>
+                 <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150/333333/FFFFFF?text=Siegerehrung" alt="Bild Siegerehrung">
+                     <p>Siegerehrung</p>
+                </div>
+                </div>
+             <p><em>Hinweis: Dies sind Platzhalterbilder. Ersetzen Sie die `src`-Attribute durch die Pfade zu Ihren echten Bildern.</em></p>
+        </section>
+
+        <section id="contact">
+            <h2>Kontakt & Anfahrt</h2>
+            <p>Haben Sie Fragen oder möchten Sie Mitglied werden? Kontaktieren Sie uns gerne!</p>
+            <p>
+                <strong>St.Seb.Schützenbruderschaft Brühl-Vochem 1871</strong><br>
+                Musterstraße 1<br>
+                12345 Musterstadt
+            </p>
+            <p>
+                Telefon: [Ihre Telefonnummer]<br>
+                E-Mail: <a href="mailto:info@schuetzenverein-x.de">info@schuetzenverein-x.de</a>
+            </p>
+            <p>
+                <strong>Trainingszeiten:</strong><br>
+                Dienstag: 18:00 - 20:00 Uhr (Jugend)<br>
+                Freitag: 19:00 - 22:00 Uhr (Erwachsene)
+            </p>
+            </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> St.Seb.Schützenbruderschaft Brühl-Vochem 1871 | <a href="#impressum" style="color: #ccc;">Impressum</a> (Link hinzufügen)</p>
+        </div>
+    </footer>
+
+    <script>
+        // === JavaScript ===
+
+        // Optional: Zeigt eine Willkommensnachricht an, wenn die Seite geladen wird
+        // alert("Willkommen beim Schützenverein X!"); // Kommentar entfernen, um Alert zu aktivieren
+
+        // Setzt das aktuelle Jahr im Footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Einfache Funktionalität für aktive Navigationslinks (optional)
+        const navLinks = document.querySelectorAll('nav a');
+        const sections = document.querySelectorAll('main section');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                 // Fügt einen kleinen Offset hinzu, damit der Link früher aktiv wird
+                if (pageYOffset >= (sectionTop - sectionHeight / 3 - 60)) { // 60 ist ca. die Höhe der Navi
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+             // Startseite aktiv, wenn ganz oben
+             if (pageYOffset < sections[0].offsetTop - 100 ) {
+                 navLinks.forEach(link => link.classList.remove('active'));
+                 document.querySelector('nav a[href="#home"]').classList.add('active');
+             }
+        });
+
+         // Smooth Scrolling für interne Links (optional)
+         document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                 if(targetElement) {
+                    // Berücksichtigt die Höhe der fixierten Navigation
+                    const headerOffset = 70; // Höhe der Navi + kleiner Puffer
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                         top: offsetPosition,
+                         behavior: "smooth"
+                    });
+                 }
+            });
+        });
+
+    </script>
+
+</body>
+</html>
